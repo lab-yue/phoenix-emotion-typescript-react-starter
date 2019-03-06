@@ -1,0 +1,40 @@
+{
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "deploy": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "@types/copy-webpack-plugin": "^4.4.3",
+    "phoenix": "file:deps/phoenix",
+    "phoenix_html": "file:deps/phoenix_html",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "terser-webpack-plugin": "^1.2.3",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3333",
+    "ts-node": "^8.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/node": "^11.10.4",
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/webpack": "^4.4.25",
+    "babel-loader": "^8.0.0",
+    "copy-webpack-plugin": "^5.0.0",
+    "webpack": "4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
