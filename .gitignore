@@ -22,8 +22,8 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 chat-*.tar
 
-# If NPM crashes, it generates a log, let's ignore it too.
-npm-debug.log
+# If NPM/YARN crashes, it generates a log, let's ignore it too.
+*.log
 
 # The directory NPM downloads your dependencies sources to.
 node_modules/

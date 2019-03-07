@@ -6,7 +6,6 @@ import { colors } from "../Theme";
 
 const GlobalSideBar = styled.aside`
   width: 15%;
-  height: 100%;
 `;
 
 const NavigatorList = styled.ul`

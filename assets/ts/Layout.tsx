@@ -1,18 +1,26 @@
 import { css, Global } from "@emotion/core";
 import styled from "@emotion/styled";
-import * as React from "react";
+import React from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import SideBar from "./components/SideBar";
 
-const FlexColumn = styled.div`
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-`;
-const LayoutMain = styled.main`
+const PageMain = styled.main`
   width: 85%;
 `;
+
+const Flex = styled.div`
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+`;
+
+const FLexGrow = styled.div`
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+`;
+
 export default function Layout({ children }: any) {
   return (
     <>
@@ -20,7 +28,7 @@ export default function Layout({ children }: any) {
         styles={css`
           html,
           body {
-            font-family: sans-serif;
+            font-family: -apple-system, sans-serif;
             text-align: center;
             font-size: 20px;
             margin: 0;
@@ -41,18 +49,20 @@ export default function Layout({ children }: any) {
           }
           #app {
             width: 100%;
-            height: 100%;
+            min-height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
           }
         `}
       />
-      <Header />
-      <FlexColumn>
-        <SideBar />
-        <LayoutMain>{children}</LayoutMain>
-      </FlexColumn>
+      <FLexGrow>
+        <Header />
+        <Flex>
+          <SideBar />
+          <PageMain>{children}</PageMain>
+        </Flex>
+      </FLexGrow>
       <Footer />
     </>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import About from "./pages/About";
+import Chat from "./pages/Chat";
 import Home from "./pages/Home";
 
 interface Routes {
@@ -15,9 +15,9 @@ const routes: Routes[] = [
     component: Home,
   },
   {
-    title: "About",
-    url: "/about",
-    component: About,
+    title: "Chat",
+    url: "/chat",
+    component: Chat,
   },
 ];
 

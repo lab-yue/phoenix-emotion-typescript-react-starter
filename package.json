@@ -3,12 +3,14 @@
   "license": "MIT",
   "scripts": {
     "deploy": "webpack --mode production",
-    "dev": "webpack --mode development --watch"
+    "dev": "webpack --mode development --watch",
+    "lint": "tslint --project . --fix"
   },
   "dependencies": {
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",
     "@types/copy-webpack-plugin": "^4.4.3",
+    "@types/phoenix": "^1.4.0",
     "phoenix": "file:deps/phoenix",
     "phoenix_html": "file:deps/phoenix_html",
     "react": "^16.8.1",
@@ -16,9 +18,9 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "terser-webpack-plugin": "^1.2.3",
+    "ts-node": "^8.0.2",
     "tslint": "^5.12.1",
-    "typescript": "^3.3.3333",
-    "ts-node": "^8.0.2"
+    "typescript": "^3.3.3333"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

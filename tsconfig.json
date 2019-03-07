@@ -23,7 +23,7 @@
     "noEmit": true
   },
   "include": [
-    "src"
+    "assets"
   ],
   "rules": {
     "no-console": false,
